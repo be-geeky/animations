@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "alogic-field-app"
+client_id = "220fffbeef972fe77af8ad4694be2e0a"
+application_url = "https://brilliant-treatment-abs-looksmart.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://brilliant-treatment-abs-looksmart.trycloudflare.com/auth/callback",
+  "https://brilliant-treatment-abs-looksmart.trycloudflare.com/auth/shopify/callback",
+  "https://brilliant-treatment-abs-looksmart.trycloudflare.com/api/auth/callback",
+  "https://brilliant-treatment-abs-looksmart.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "parma-deve.myshopify.com"
